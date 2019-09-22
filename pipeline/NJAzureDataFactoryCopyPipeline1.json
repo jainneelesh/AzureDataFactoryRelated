@@ -1,0 +1,26 @@
+{
+	"name": "NJAzureDataFactoryCopyPipeline1",
+	"properties": {
+		"description": "NJAzureDataFactoryCopyPipeline1 in GitHub",
+		"activities": [
+			{
+				"name": "CopyDataFromBlobToSql",
+				"description": "CopyDataFromBlobToSql in Azure Pipeline",
+				"type": "Copy",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "7.00:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"enableStaging": false
+				}
+			}
+		],
+		"annotations": []
+	}
+}
